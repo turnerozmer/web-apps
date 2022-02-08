@@ -10,29 +10,23 @@ for number in numbers
     end
 end
 
-card1 = deck[rand(0..51)]
-card2 = deck[rand(0..51)]
-card3 = deck[rand(0..51)]
-card4 = deck[rand(0..51)]
-card5 = deck[rand(0..51)]
+deck.shuffle!
 
 %>
-
 
 <h1> Lets Play Cards! </h1>
 
 <p> Here is your hand! </p>
 
 <p>
-<img src ="/images/cards/<%=card1%>.svg">
-<img src ="/images/cards/<%=card2%>.svg">
-<img src ="/images/cards/<%=card3%>.svg">
-<img src ="/images/cards/<%=card4%>.svg">
-<img src ="/images/cards/<%=card5%>.svg">
+<img src ="/images/cards/<%=deck[0]%>.svg">
+<img src ="/images/cards/<%=deck[1]%>.svg">
+<img src ="/images/cards/<%=deck[2]%>.svg">
+<img src ="/images/cards/<%=deck[3]%>.svg">
+<img src ="/images/cards/<%=deck[4]%>.svg">
+</p>
 
- </p>
-
- <p>
+<p>
     <a href = "/cards">Deal Again!</a>
 </p>
 
