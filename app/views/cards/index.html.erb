@@ -1,0 +1,38 @@
+<%
+numbers = [2,3,4,5,6,7,8,9,10,"jack","queen","king","ace"]
+suits = ["diamonds", "hearts", "spades", "clubs"]
+
+deck = []
+
+for number in numbers
+    for suit in suits
+        deck.append("#{number}_of_#{suit}")
+    end
+end
+
+card1 = deck[rand(0..51)]
+card2 = deck[rand(0..51)]
+card3 = deck[rand(0..51)]
+card4 = deck[rand(0..51)]
+card5 = deck[rand(0..51)]
+
+%>
+
+
+<h1> Lets Play Cards! </h1>
+
+<p> Here is your hand! </p>
+
+<p>
+<img src ="/images/cards/<%=card1%>.svg">
+<img src ="/images/cards/<%=card2%>.svg">
+<img src ="/images/cards/<%=card3%>.svg">
+<img src ="/images/cards/<%=card4%>.svg">
+<img src ="/images/cards/<%=card5%>.svg">
+
+ </p>
+
+ <p>
+    <a href = "/cards">Deal Again!</a>
+</p>
+
